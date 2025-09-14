@@ -39,8 +39,8 @@ A Python script to identify cryptographic hashes based on their structure and pa
 - Python 3.6+
 
 ```bash
-git clone https://github.com/your-repo/hash-identifier.git
-cd hash-identifier
+git clone https://github.com/subrat243/Hash-Identifier.git
+cd Hash-Identifier
 pip install colorama  # Optional, for colored output
 ```
 
@@ -50,7 +50,7 @@ pip install colorama  # Optional, for colored output
 
 ### Basic Usage
 ```bash
-python hash_identifier.py
+python hashify.py
 ```
 Enter a hash when prompted:
 ```
@@ -59,7 +59,7 @@ Please enter the hash you want to identify: $2a$10$N9qo8uLOickgx2ZMRZoMy...
 
 ### Command-Line Input
 ```bash
-python hash_identifier.py "5f4dcc3b5aa765d61d8327deb882cf99"
+python hashify.py "5f4dcc3b5aa765d61d8327deb882cf99"
 ```
 
 ---
@@ -78,7 +78,7 @@ python hash_identifier.py "5f4dcc3b5aa765d61d8327deb882cf99"
 
 ### Identify bcrypt
 ```bash
-python hash_identifier.py "$2a$10$N9qo8uLOickgx2ZMRZoMy..."
+python hashify.py "$2a$10$N9qo8uLOickgx2ZMRZoMy..."
 ```
 ```
 [OUTPUT]
@@ -89,7 +89,7 @@ python hash_identifier.py "$2a$10$N9qo8uLOickgx2ZMRZoMy..."
 
 ### Identify NTLM/MD5 (ambiguous)
 ```bash
-python hash_identifier.py "8846f7eaee8fb117ad06bdd830b7586c"
+python hashify.py "8846f7eaee8fb117ad06bdd830b7586c"
 ```
 ```
 [OUTPUT]
@@ -104,7 +104,7 @@ python hash_identifier.py "8846f7eaee8fb117ad06bdd830b7586c"
 ### Batch Mode
 Process multiple hashes from a file (`hashes.txt`):
 ```python
-# hash_identifier.py (add this to main())
+# hashify.py (add this to main())
 if os.path.exists("hashes.txt"):
     with open("hashes.txt") as f:
         for line in f:
@@ -114,7 +114,7 @@ if os.path.exists("hashes.txt"):
 ### Integration with `hashcat`
 Use the tool to filter hashes before cracking:
 ```bash
-python hash_identifier.py $(cat hashes.txt) | grep "MD5" > md5_hashes.txt
+python hashify.py $(cat hashes.txt) | grep "MD5" > md5_hashes.txt
 hashcat -m 0 md5_hashes.txt wordlist.txt
 ```
 
@@ -166,4 +166,3 @@ MIT License. See [LICENSE](LICENSE).
 3. Submit a pull request.
 
 ---
-
