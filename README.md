@@ -40,7 +40,7 @@ A Python script to identify cryptographic hashes based on their structure and pa
 
 ```bash
 git clone https://github.com/subrat243/Hash-Identifier.git
-cd Hash-Identifier
+cd Hashify
 pip install colorama  # Optional, for colored output
 ```
 
