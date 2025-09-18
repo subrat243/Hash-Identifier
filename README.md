@@ -25,11 +25,11 @@ A Python script to identify cryptographic hashes based on their structure and pa
 ---
 
 ## Features
-- ✅ **30+ supported hash types**: From bcrypt to SHA3 and NTLM.
--  🔍 **High-confidence regex matching**: Unique patterns for precise identification.
--  🎨 **Color output** (optional): Use `colorama` for highlighted results.
--  ️ **Modular design**: Easy to extend with new hash types.
--  📁 **File input support**: Process hashes from a file.
+- **30+ supported hash types**: From bcrypt to SHA3 and NTLM.
+- **High-confidence regex matching**: Unique patterns for precise identification.
+- **Color output** (optional): Use `colorama` for highlighted results.
+- **Modular design**: Easy to extend with new hash types.
+- **File input support**: Process hashes from a file.
 
 ---
 
