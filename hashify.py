@@ -3,6 +3,7 @@
 # Version: 2.0
 # Description: This script identifies hash types using a comprehensive library of
 # regular expressions, combining the modern structure of hashify with the
+# extensive algorithm list.
 
 import re
 import sys
