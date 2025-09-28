@@ -2,7 +2,7 @@
 
 Hashify is a powerful, modern, and easy-to-use Python tool designed to identify the type of a given hash or checksum. It uses a comprehensive, regex-based library of over 50 hash algorithms to provide fast and accurate identification, complete with confidence levels to help you quickly pinpoint the most likely candidates.
 
-This version combines a modern, maintainable structure with the extensive algorithm list from the classic `hash-id` tool by Zion3R, offering the best of both worlds.
+This version combines a modern, maintainable structure with the extensive algorithm list.
 
 -----
 
