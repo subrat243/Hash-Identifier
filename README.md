@@ -1,7 +1,3 @@
-Of course. Here is a comprehensive README file for the improved `hashify.py` script.
-
------
-
 # Hashify v2.0: The Comprehensive Hash Identifier
 
 Hashify is a powerful, modern, and easy-to-use Python tool designed to identify the type of a given hash or checksum. It uses a comprehensive, regex-based library of over 50 hash algorithms to provide fast and accurate identification, complete with confidence levels to help you quickly pinpoint the most likely candidates.
